@@ -1,0 +1,25 @@
+services:
+  testing:
+    build:
+      context: .
+      dockerfile: ./dockerfile.testing
+      tags:
+        - testing
+    volumes:
+      - ./:/src/app/
+
+  development:
+    build:
+      context: .
+      dockerfile: ./dockerfile.development
+      tags:
+        - development
+    volumes:
+      - ./:/src/app/
+
+  production:
+   build:
+    context: .
+    dockerfile: ./dockerfile.production
+    tags:
+      - production
