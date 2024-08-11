@@ -1,7 +1,7 @@
 ![](./thumbnail.png)
 
 <h1 align="center">
-Pokeapi Pokedex Api Scraping Script With Erlang, Rebar3, Hackney, JSX, Docker Compose, EditorConfig, Eunit
+PokeAPI Pokedex Api Scraping Script With Erlang, Rebar3, Hackney, JSX, Docker Compose, EditorConfig, Eunit
 </h1>
 
 <br/>
@@ -43,6 +43,7 @@ Pokeapi Pokedex Api Scraping Script With Erlang, Rebar3, Hackney, JSX, Docker Co
 - Docker
 - Docker Compose
 - EditorConfig
+- PokeAPI
 
 <br />
 
@@ -68,4 +69,4 @@ See more:
 
 <p align="center"><strong>Repository Link:</strong></p>
 
-[https://github.com/samueldecarvalhodeveloper/Pokeapi-Pokedex-Api-Scraping-Script-With-Erlang-Rebar3-Hackney-JSX-Docker-Compose-EditorConfig-Eunit](https://github.com/samueldecarvalhodeveloper/Pokeapi-Pokedex-Api-Scraping-Script-With-Erlang-Rebar3-Hackney-JSX-Docker-Compose-EditorConfig-Eunit)
+[https://github.com/samueldecarvalhodeveloper/PokeAPI-Pokedex-Api-Scraping-Script-With-Erlang-Rebar3-Hackney-JSX-Docker-Compose-EditorConfig-Eunit](https://github.com/samueldecarvalhodeveloper/PokeAPI-Pokedex-Api-Scraping-Script-With-Erlang-Rebar3-Hackney-JSX-Docker-Compose-EditorConfig-Eunit)
