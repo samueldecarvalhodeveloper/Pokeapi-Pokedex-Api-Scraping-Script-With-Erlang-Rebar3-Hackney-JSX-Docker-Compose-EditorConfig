@@ -29,7 +29,7 @@ function_execute_web_scraping_script_fetching_pokemons_data_and_image_from_serve
 
             BulbasaurImageBlobFromServer = pokemon_gateway:get_pokemon_image_blob(?BULBASAUR_ID),
 
-            {ok, BulbasaurImageBlobFromDisk} = file:read_file(
+            {_, BulbasaurImageBlobFromDisk} = file:read_file(
                 string:concat(
                     ?POKEMONS_SCRAPED_DATA_DIRECTORY,
                     string:concat(

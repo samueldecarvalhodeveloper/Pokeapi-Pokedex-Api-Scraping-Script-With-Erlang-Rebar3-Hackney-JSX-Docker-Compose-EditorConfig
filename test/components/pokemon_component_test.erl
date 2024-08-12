@@ -17,7 +17,11 @@ component_handling_data_input_and_output_scenario_test() ->
             ?assertEqual(<<?POISON_TYPE>>, lists:nth(2, maps:get(?POKEMON_DATA_MAP_TYPES_KEY, lists:nth(1 ,ListOfMappedPokemonsData)))),
 
             ListOfAllPokemonsFromTheFirstGenerationImage = pokemon_data_access_object:get_list_of_pokemons_image_blob(),
+            {_, BulbasaurImageMock} = file:read_file(?BULBASAUR_IMAGE_MOCK_PATH),
 
-            ?assertEqual(?FIRST_GENERATION_LAST_POKEMON_ID, length(ListOfAllPokemonsFromTheFirstGenerationImage))
+            ?assertEqual(BulbasaurImageMock, lists:nth(1, ListOfAllPokemonsFromTheFirstGenerationImage)),
+            ?assertEqual(?FIRST_GENERATION_LAST_POKEMON_ID, length(ListOfAllPokemonsFromTheFirstGenerationImage)),
+
+            file:close(BulbasaurImageMock)
         end
     }.

@@ -24,6 +24,11 @@ function_get_list_of_pokemons_image_blob_returning_the_image_binary_long_object_
         fun() ->
             ListOfAllPokemonsFromTheFirstGenerationImage = pokemon_data_access_object:get_list_of_pokemons_image_blob(),
 
-            ?assertEqual(?FIRST_GENERATION_LAST_POKEMON_ID, length(ListOfAllPokemonsFromTheFirstGenerationImage))
+            {_, BulbasaurImageMock} = file:read_file(?BULBASAUR_IMAGE_MOCK_PATH),
+
+            ?assertEqual(?FIRST_GENERATION_LAST_POKEMON_ID, length(ListOfAllPokemonsFromTheFirstGenerationImage)),
+            ?assertEqual(BulbasaurImageMock, lists:nth(1, ListOfAllPokemonsFromTheFirstGenerationImage)),
+
+            file:close(BulbasaurImageMock)
         end
     }.
