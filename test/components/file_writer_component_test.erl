@@ -4,7 +4,7 @@
 
 -include("src/constants/domains/file_writer_constants.hrl").
 
-component_handling_data_input_and_output_scenario_test() ->
+writing_file_with_content_on_disk_test() ->
     file_writer:write_file(
         ?ANY_DATA_TO_BE_WRITTEN,
         ?ANY_DATA_TO_BE_WRITTEN_FILE_NAME,

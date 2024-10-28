@@ -4,7 +4,7 @@
 
 -include("src/constants/domains/pokemon_constants.hrl").
 
-component_handling_data_input_and_output_scenario_test() ->
+fetching_data_server_test() ->
     PokemonUrl = string:concat(?POKEMON_DATA_URL, ?BULBASAUR_ID),
 
     RequestResponseBody = http_client:get_request_response_body(PokemonUrl),

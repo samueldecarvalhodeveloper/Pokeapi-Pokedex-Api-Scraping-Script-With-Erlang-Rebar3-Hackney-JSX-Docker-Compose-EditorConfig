@@ -5,8 +5,6 @@ services:
       dockerfile: ./dockerfile.testing
       tags:
         - testing
-    volumes:
-      - ./:/src/app/
 
   development:
     build:
@@ -14,8 +12,6 @@ services:
       dockerfile: ./dockerfile.development
       tags:
         - development
-    volumes:
-      - ./:/src/app/
 
   production:
    build:

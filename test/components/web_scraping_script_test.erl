@@ -6,7 +6,7 @@
 -include("src/constants/domains/pokemon_constants.hrl").
 -include("src/constants/script_constants.hrl").
 
-component_handling_data_input_and_output_scenario_test_() ->
+fetching_pokemons_data_and_image_and_storing_on_disk_test_() ->
     {timeout,
         ?LARGER_TIMEOUT,
         fun() ->
@@ -29,7 +29,7 @@ component_handling_data_input_and_output_scenario_test_() ->
 
             BulbasaurImageBlobFromServer = pokemon_gateway:get_pokemon_image_blob(?BULBASAUR_ID),
 
-            {ok, BulbasaurImageBlobFromDisk} = file:read_file(
+            {_, BulbasaurImageBlobFromDisk} = file:read_file(
                 string:concat(
                     ?POKEMONS_SCRAPED_DATA_DIRECTORY,
                     string:concat(
